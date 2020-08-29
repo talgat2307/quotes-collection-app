@@ -1,38 +1,105 @@
 .App {
-  text-align: center;
+  font-family: "Courier New";
+  width: 1400px;
+  padding: 0 20px;
+  margin: 0 auto;
+  line-height: 1.8;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #000000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header a {
+  color: #000000;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar li {
+  display: inline-block;
+  padding: 5px;
+  margin-left: 80px;
+  list-style: none;
+}
+
+.list a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.list a:hover {
+  color: #0760b8;
+  border-bottom: 2px solid #0760b8;
+}
+
+.main-block {
+  display: flex;
+}
+
+.categories {
+  margin-top: 30px;
+  width: 25%;
+}
+
+.categories li {
+  margin-bottom: 10px;
+}
+
+.add {
+  width: 800px;
+  border: 2px solid #000000;
+  padding: 50px 20px 20px 20px;
+  border-radius: 2px;
+}
+
+.add input,
+.add select,
+.add textarea {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.author,
+.text,
+.select {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.home {
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.quote {
+  display: flex;
+  width: 800px;
+  padding: 25px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  position: relative;
 }
+
+.quote h3 {
+  margin-bottom: 40px;
+}
+
+.btn {
+  position: absolute;
+  right: 20px;
+  top: -5px;
+  padding-top: 15px;
+  margin-left: 10px;
+}
+
+.btn button {
+  margin-left: 5px;
+}
+
