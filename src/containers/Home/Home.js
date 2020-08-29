@@ -37,7 +37,7 @@ const Home = props => {
       <h1>All</h1>
       {allQuotes.map(quote => {
         return (
-          <div className='quote'>
+          <div key={quote.id} className='quote'>
             <div>
               <h3>{quote.category}</h3>
               <p>"{quote.text}"</p>

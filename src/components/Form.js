@@ -8,7 +8,7 @@ const Form = props => {
         <div className='select'>
           <label htmlFor="select">Category</label>
           <select name='category' id='select' onChange={props.handleQuoteChange}>
-            <option value='' selected disabled hidden>{props.optionVal}</option>
+            <option value={props.optionVal} hidden>{props.optionVal}</option>
             <option value="star-wars">Star Wars</option>
             <option value="saying">Saying</option>
             <option value="motivational">Motivational</option>
